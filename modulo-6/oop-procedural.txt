@@ -1,0 +1,14 @@
+OOP
+as entidades do software emulam aquelas conhecidas
+na vida real. Por exemplo um objeto realizando ações.
+Podemos pensar na Alexa da Amazon.
+Que realiza ações de "colocar alarme para as 8 horas"
+ou "ligar a música".
+E há uma organização desta forma, ao mesmo tempo
+pode haver um objeto "humano" que "fala" e
+em uma das falas(métodos) ele diz imperativamente
+o que a Alexa deve fazer.
+
+Procedural
+É similar a uma receita de bolo. Onde
+é bastante detalhada e vai de linha em linha.

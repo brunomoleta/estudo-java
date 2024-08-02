@@ -1,0 +1,15 @@
+1. Abrir o olho
+2. Pensar "que horas são será"
+3. Se houver barulho alto de carros lá fora (o que quer dizer que é hora de levantar):
+    levantar;
+    dobrar as cobertas, uma por uma;
+    guardá-las no armário;
+    se vontade de ir ao banheiro:
+        ir
+    se não:
+        andar até a cozinha;
+        pegar um copo;
+        encher ele de água;
+        beber a água;
+    se não há barulho:
+        permanecer na cama;
