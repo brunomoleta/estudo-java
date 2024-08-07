@@ -1,9 +1,8 @@
 public class TestList {
     public static void main(String[] args) {
-        List lista = new List();
+        Pessoas lista = new Pessoas();
 
-        lista.adicionarVariasFrutas(4);
-
-        lista.imprimirLista();
+        lista.adicionarVariosNomes(6);
+        lista.imprimirListas();
     }
 }
