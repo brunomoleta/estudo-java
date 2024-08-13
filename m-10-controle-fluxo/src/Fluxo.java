@@ -25,7 +25,7 @@ public class Fluxo {
         }
         return sum / notas.length;
     }
-
+    
     private String resultadoEstudante() {
         if (this.calcularMedia() >= 7) {
             return "foi aprovado";
