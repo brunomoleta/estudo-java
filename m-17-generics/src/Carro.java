@@ -44,6 +44,10 @@ public abstract class Carro implements ICarro {
         return motorLigado;
     }
 
+    public String getModelo() {
+        return this.modelo;
+    }
+
     @Override
     public void trocarMarcha(int marchaAtual) {
         this.marchaAtual = this.marchaAtual + 1;

@@ -1,7 +1,7 @@
 public class FiatUno extends Carro {
 
-    public FiatUno(int potenciaMotor) {
-        super(potenciaMotor, "Uno", "Azul");
+    public FiatUno(int potenciaMotor, String cor) {
+        super(potenciaMotor, "Uno", cor);
         if (potenciaMotor > 99) {
             throw new IllegalArgumentException("A potência de motor tem que ser pouca, senão o carro tomba.");
         }

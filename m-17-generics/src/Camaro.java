@@ -1,7 +1,7 @@
 public class Camaro extends Carro {
 
-    public Camaro(int potenciaMotor) {
-        super(potenciaMotor, "Camaro", "Amarelo");
+    public Camaro(int potenciaMotor, String cor) {
+        super(potenciaMotor, "Camaro", cor);
         if (potenciaMotor < 240) {
             throw new IllegalArgumentException("A potência de motor tem que ser forte.");
         }
