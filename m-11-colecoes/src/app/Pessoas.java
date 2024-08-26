@@ -1,3 +1,5 @@
+package app;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,7 +9,11 @@ import java.util.stream.IntStream;
 
 public class Pessoas {
     private static final List<String> listaNomes = new ArrayList<>();
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
+
+    public Pessoas(Scanner scanner){
+        this.scanner = scanner;
+    }
 
     List<String> homens = new ArrayList<>();
     List<String> mulheres = new ArrayList<>();
@@ -19,6 +25,10 @@ public class Pessoas {
         Collections.sort(listaNomes);
     }
 
+    public List<String> getMulheres() {
+        return mulheres;
+    }
+
     public void adicionarVariosNomes(int numeroNomes) {
         IntStream.range(0, numeroNomes).forEach(i -> adicionarNome(i + 1));
     }
@@ -27,7 +37,7 @@ public class Pessoas {
         return String.join(", ", listaNomes);
     }
 
-    private void separarPessoasPorGenero(){
+    public void separarPessoasPorGenero(){
         homens = listaNomes.stream()
                 .filter(pessoa -> pessoa.endsWith("o"))
                 .collect(Collectors.toList());
