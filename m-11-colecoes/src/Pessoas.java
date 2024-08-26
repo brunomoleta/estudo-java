@@ -2,10 +2,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Pessoas {
     private static final List<String> listaNomes = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
+
     List<String> homens = new ArrayList<>();
     List<String> mulheres = new ArrayList<>();
 
@@ -16,10 +19,8 @@ public class Pessoas {
         Collections.sort(listaNomes);
     }
 
-    public void adicionarVariosNomes(int numFruits) {
-        for (int i = 0; i < numFruits; i++) {
-            adicionarNome(i+1);
-        }
+    public void adicionarVariosNomes(int numeroNomes) {
+        IntStream.range(0, numeroNomes).forEach(i -> adicionarNome(i + 1));
     }
 
     private String getListaGeral() {
@@ -27,13 +28,13 @@ public class Pessoas {
     }
 
     private void separarPessoasPorGenero(){
-        for (String pessoa: listaNomes) {
-            if (pessoa.endsWith("o")){
-                homens.add(pessoa);
-            } else if (pessoa.endsWith("a")){
-                mulheres.add(pessoa);
-            }
-        }
+        homens = listaNomes.stream()
+                .filter(pessoa -> pessoa.endsWith("o"))
+                .collect(Collectors.toList());
+
+        mulheres = listaNomes.stream()
+                .filter(pessoa -> pessoa.endsWith("a"))
+                .collect(Collectors.toList());
     }
 
     public String frasePorGrupos(){
