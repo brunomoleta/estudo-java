@@ -1,4 +1,4 @@
-package classes.services.generic;
+package classes.services;
 
 import classes.domain.Cliente;
 import classes.exceptions.TipoChaveNaoEncontradaException;

@@ -1,7 +1,7 @@
 import classes.domain.Cliente;
 import classes.exceptions.TipoChaveNaoEncontradaException;
-import classes.services.generic.ClienteService;
-import classes.services.generic.IClienteService;
+import classes.services.ClienteService;
+import classes.services.IClienteService;
 import cliente.dao.IClienteDAO;
 import dao.ClienteDaoMock;
 import org.junit.Assert;

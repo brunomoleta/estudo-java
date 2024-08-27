@@ -1,8 +1,8 @@
 import classes.dao.IProdutoDAO;
 import classes.domain.Produto;
 import classes.exceptions.TipoChaveNaoEncontradaException;
-import classes.services.generic.IProdutoService;
-import classes.services.generic.ProdutoService;
+import classes.services.IProdutoService;
+import classes.services.ProdutoService;
 import dao.ProdutoDaoMock;
 import org.junit.Assert;
 import org.junit.Before;
