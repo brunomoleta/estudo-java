@@ -18,6 +18,7 @@ public class ProdutoFactory {
         prod.setNome(rs.getString("NOME"));
         prod.setDescricao(rs.getString("DESCRICAO"));
         prod.setValor(rs.getBigDecimal("VALOR"));
+        prod.setEmEstoque(rs.getBoolean("EM_ESTOQUE"));
         return prod;
     }
 }

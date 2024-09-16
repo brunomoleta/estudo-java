@@ -30,7 +30,18 @@ public class Produto implements Persistente {
 
     @ColunaTabela(dbName = "valor", setJavaName = "setValor")
     private BigDecimal valor;
-    
+
+    @ColunaTabela(dbName = "emEstoque", setJavaName = "setEmEstoque")
+    private boolean emEstoque;
+
+    public boolean getEmEstoque() {
+        return emEstoque;
+    }
+
+    public void setEmEstoque(boolean emEstoque) {
+        this.emEstoque = emEstoque;
+    }
+
     public String getCodigo() {
         return codigo;
     }
