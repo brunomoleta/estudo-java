@@ -1,8 +1,10 @@
 package cliente.domain;
 
+import classes.dao.Persistente;
+
 import java.util.Objects;
 
-public class Cliente {
+public class Cliente implements Persistente {
 
     private String nome;
     private Long cpf;
@@ -20,6 +22,10 @@ public class Cliente {
         this.numero = Integer.valueOf(num.trim());
         this.cidade = cidade;
         this.estado = estado;
+
+    }
+
+    public Cliente() {
 
     }
 

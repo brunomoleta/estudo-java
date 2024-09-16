@@ -50,7 +50,7 @@ public class App {
         //Validar se foi passado somente o cpf
         Cliente cliente = iClienteDAO.consultar(Long.parseLong(dados));
         if (cliente != null) {
-            JOptionPane.showMessageDialog(null, "Cliente encontrado: " + cliente.toString(), "Sucesso",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Cliente encontrado: " + cliente, "Sucesso",JOptionPane.INFORMATION_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado: ", "Sucesso",JOptionPane.INFORMATION_MESSAGE);
         }

@@ -6,7 +6,7 @@ import cliente.dao.IClienteDAO;
 
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
 
-    //private IClienteDAO clienteDAO;
+    //private dao.IClienteDAO clienteDAO;
 
     public ClienteService(IClienteDAO clienteDAO) {
         super(clienteDAO);
